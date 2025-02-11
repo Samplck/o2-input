@@ -1,7 +1,9 @@
 /* Core */
-@import 'core/defaults.scss';
+@import 'core/variables.scss';
 @import 'core/fonts.scss';
+@import 'core/defaults.scss';
 
 /* Components */
 @import 'components/Layout.scss';
+@import 'components/Label.scss';
 @import 'components/O2Input.scss';

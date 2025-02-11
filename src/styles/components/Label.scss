@@ -1,0 +1,17 @@
+.c-label {
+  display: flex;
+  align-items: center;
+  gap: var(--dimension-xs);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.16px;
+  color: var(--color-content-on-neutral-xx-high);
+
+  .description {
+    font-size: 14px;
+    font-weight: 550;
+    line-height: 17px;
+    color: var(--color-content-on-neutral-medium);
+  }
+}
