@@ -1,11 +1,13 @@
-import './App.css';
+import './styles/index.scss';
+import ReactDOM from 'react-dom/client';
+import HomePage from './components/pages/Home.tsx';
 
 const App = () => {
   return (
-    <>
-    
-    </>
+    <HomePage />
   );
 }
 
-export default App;
+ReactDOM
+  .createRoot(document.getElementById('root'))
+  .render(<App />);
