@@ -1,0 +1,25 @@
+:root {
+  --color-surface-x-high: #8C8C9A;
+  --color-surface-x-low: #FFFFFF;
+  --color-surface-brand: #0050FF;
+  --color-surface-danger: #DC2828;
+  --color-surface-danger-variant: #FFDCDC;
+  --color-surface-warning: #A56315;
+  --color-surface-warning-variant: #FAF1B6;
+
+  --color-content-on-neutral-xx-high: #2C2C31;
+  --color-content-on-neutral-medium: #8C8C9A;
+  --color-content-on-neutral-low: #C9C9CE;
+  --color-content-on-neutral-danger: #DC2828;
+  --color-content-on-neutral-warning: #A56315;
+
+  --color-state-default-hover: rgba(hex-to-rgb('#1A1A1A0F'), 0.06);
+  --color-state-default-focus: rgba(hex-to-rgb('#1A1A1ACC'), 0.8);
+
+  --dimension-radius-input: 12px;
+
+  --dimension-xs: 8px;
+  --dimension-s: 12px;
+  --dimension-m: 16px;
+  --dimension-l: 20px;
+}
