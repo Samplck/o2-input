@@ -1,15 +1,24 @@
 import cx from 'classnames';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Label, { type LabelOptions } from 'components/ui/atoms/Label/Label';
 import { type ValidationStatus, type Validation } from 'types/validations';
 
 type O2InputProps = {
   label?: LabelOptions;
   placeholder?: string;
+  disabled?: boolean;
+  defaultStatus?: ValidationStatus;
 };
 
-const O2Input = ({ label, placeholder }: O2InputProps) => {
-  const [status, setStatus] = useState<ValidationStatus>('ok');
+const O2Input = ({ 
+  label, 
+  placeholder, 
+  disabled, 
+  defaultStatus = 'ok' 
+}: O2InputProps) => {
+  const [status, setStatus] = useState<ValidationStatus>(defaultStatus);
+
+  useEffect((): void => setStatus(defaultStatus), [defaultStatus]);
 
   const validate = (value: string): void => {
     const validations: Validation[] = [
@@ -35,6 +44,8 @@ const O2Input = ({ label, placeholder }: O2InputProps) => {
       }
       <input 
         id="O2input"
+        placeholder={placeholder}
+        disabled={disabled}
         className={cx('c-o2-input', {
           '-error': status === 'error',
           '-warning': status === 'warning'

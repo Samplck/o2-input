@@ -11,6 +11,7 @@
   padding: var(--dimension-s);
   border-radius: var(--dimension-radius-input);
   color: var(--color-content-on-neutral-xx-high);
+  caret-color: var(--color-surface-brand);
   background-color: var(--color-surface-x-low);
   border: 1px solid var(--color-surface-x-high);
   outline: 2px solid transparent;
@@ -22,6 +23,14 @@
 
   &.-error {
     border-color: var(--color-surface-danger) !important;
+  }
+
+  &::placeholder {
+    color: var(--color-content-on-neutral-low)
+  }
+
+  &:disabled {
+    cursor: not-allowed;
   }
 
   &:hover {
