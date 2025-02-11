@@ -3,23 +3,50 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "cra-template": "1.2.0",
-    "html-webpack-plugin": "^5.6.3",
+    "classnames": "^2.5.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.8",
+    "@babel/preset-env": "^7.26.8",
+    "@babel/preset-react": "^7.26.3",
+    "@babel/preset-typescript": "^7.26.0",
+    "@chromatic-com/storybook": "^3.2.4",
+    "@storybook/addon-essentials": "^8.5.3",
+    "@storybook/addon-interactions": "^8.5.3",
+    "@storybook/addon-onboarding": "^8.5.3",
+    "@storybook/blocks": "^8.5.3",
+    "@storybook/preset-create-react-app": "^8.5.3",
+    "@storybook/react": "^8.5.3",
+    "@storybook/react-webpack5": "^8.5.3",
+    "@storybook/test": "^8.5.3",
+    "@types/react": "^19.0.8",
+    "babel-loader": "^9.2.1",
+    "cra-template": "1.2.0",
+    "css-loader": "^7.1.2",
+    "eslint-plugin-storybook": "^0.11.2",
+    "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
+    "prop-types": "^15.8.1",
     "react-scripts": "5.0.1",
+    "storybook": "^8.5.3",
     "typescript": "^4.9.5",
     "webpack": "^5.97.1",
-    "webpack-cli": "^6.0.1"
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
   },
   "scripts": {
     "dev": "webpack serve --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "plugin:storybook/recommended"
     ]
   },
   "browserslist": {
@@ -33,16 +60,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@babel/core": "^7.26.8",
-    "@babel/preset-env": "^7.26.8",
-    "@babel/preset-react": "^7.26.3",
-    "@babel/preset-typescript": "^7.26.0",
-    "@types/react": "^19.0.8",
-    "babel-loader": "^9.2.1",
-    "css-loader": "^7.1.2",
-    "mini-css-extract-plugin": "^2.9.2",
-    "webpack-dev-server": "^5.2.0"
   }
 }
