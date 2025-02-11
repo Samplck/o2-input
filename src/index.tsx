@@ -1,4 +1,4 @@
-import './styles/index.scss';
+import 'styles/index.scss';
 import ReactDOM from 'react-dom/client';
 import HomePage from 'components/pages/Home';
 
