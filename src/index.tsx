@@ -1,6 +1,6 @@
 import './styles/index.scss';
 import ReactDOM from 'react-dom/client';
-import HomePage from './components/pages/Home.tsx';
+import HomePage from 'components/pages/Home';
 
 const App = () => {
   return (
